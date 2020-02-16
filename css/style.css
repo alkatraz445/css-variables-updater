@@ -1,24 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
 
+/* Varaibles */
+
 :root {
   --base: #ffc600;
-  --spacing: 10px;
+  --spacing: 800px;
   --blur: 5px;
 }
 
-img {
-  width: 800px;
-  height: 500px;
-  object-fit: cover;
-  background-color: var(--base);
-  padding: var(--spacing);
-  filter: blur(var(--blur));
+/* Helper */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.hl {
-  color: var(--base);
-  font-family: "Fredoka One", cursive;
-}
+/* Main styles */
 
 body {
   text-align: center;
@@ -29,10 +27,29 @@ body {
   font-size: 50px;
 }
 
+.hl {
+  color: var(--base);
+  font-family: "Fredoka One", cursive;
+}
+
 .controls {
   margin-bottom: 50px;
 }
 
 input {
   width: 100px;
+}
+
+img {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+  filter: blur(var(--blur));
+}
+
+.spacing {
+  background-color: var(--base);
+  width: var(--spacing);
+  height: calc(0.62 * var(--spacing));
+  align-items: center;
 }

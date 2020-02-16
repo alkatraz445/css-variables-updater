@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <title>Css variables</title>
   </head>
-  <body>
+  <body class="flex">
     <h2>Real-time CSS updates with <span class="hl">JS</span></h2>
 
     <div class="controls">
@@ -16,9 +16,9 @@
         id="spacing"
         type="range"
         name="spacing"
-        min="5"
-        max="50"
-        value="10"
+        min="800"
+        max="1000"
+        value="810"
         data-sizing="px"
       />
 
@@ -37,9 +37,12 @@
       <input id="base" type="color" name="base" value="#ffc600" />
     </div>
 
-    <img
-      src="https://images.unsplash.com/photo-1577915207354-8f266a3fc016?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-    />
+    <div class="spacing flex">
+      <img
+        src="https://images.unsplash.com/photo-1577915207354-8f266a3fc016?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+      />
+    </div>
+
     <script src="js/main.js"></script>
   </body>
 </html>
