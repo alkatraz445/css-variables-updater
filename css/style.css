@@ -1,11 +1,13 @@
+/* Google fonts */
+
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
 
 /* Varaibles */
 
 :root {
   --base: #ffc600;
-  --spacing: 800px;
-  --blur: 5px;
+  --spacing: 820px;
+  --blur: 2px;
 }
 
 /* Helper */
@@ -13,7 +15,9 @@
 .flex {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /* Main styles */
@@ -43,13 +47,15 @@ input {
 img {
   width: 800px;
   height: 500px;
+  border: 1px solid black;
   object-fit: cover;
   filter: blur(var(--blur));
 }
 
 .spacing {
+  border: 2px solid black;
+  border-radius: calc(0.01 * var(--spacing));
   background-color: var(--base);
   width: var(--spacing);
-  height: calc(0.62 * var(--spacing));
-  align-items: center;
+  height: calc(0.63 * var(--spacing));
 }
